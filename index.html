@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Creativo - Diseño Gráfico que Transforma Marcas</title>
+  <meta name="description" content="Estudio de diseño gráfico especializado en branding, diseño web y experiencias visuales memorables.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-purple': '#7c3aed',
+            'brand-pink': '#ec4899',
+            'brand-yellow': '#fbbf24',
+            'brand-dark': '#0f0f1a'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-lg bg-gradient-brand flex items-center justify-center text-white font-bold text-xl">S</div>
+          <span class="text-xl font-bold">Studio<span class="text-gradient">Creativo</span></span>
+        </a>
+
+        <!-- Menú desktop -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-brand-purple">Inicio</a>
+          <a href="screens/nosotros.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Nosotros</a>
+          <a href="screens/servicios.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Servicios</a>
+          <a href="screens/galeria.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Galería</a>
+          <a href="screens/precios.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Precios</a>
+          <a href="screens/clases.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Clases</a>
+          <a href="screens/contacto.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Contacto</a>
+        </div>
+
+        <!-- CTA -->
+        <a href="screens/contacto.html" class="hidden lg:inline-block btn-primary">Cotizar Proyecto</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger lg:hidden text-gray-800">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-40 shadow-2xl p-8 lg:hidden">
+    <div class="mt-20 flex flex-col gap-6">
+      <a href="index.html" class="text-lg font-medium text-brand-purple">Inicio</a>
+      <a href="screens/nosotros.html" class="text-lg font-medium text-gray-700">Nosotros</a>
+      <a href="screens/servicios.html" class="text-lg font-medium text-gray-700">Servicios</a>
+      <a href="screens/galeria.html" class="text-lg font-medium text-gray-700">Galería</a>
+      <a href="screens/precios.html" class="text-lg font-medium text-gray-700">Precios</a>
+      <a href="screens/clases.html" class="text-lg font-medium text-gray-700">Clases</a>
+      <a href="screens/contacto.html" class="text-lg font-medium text-gray-700">Contacto</a>
+      <a href="screens/contacto.html" class="btn-primary text-center mt-4">Cotizar</a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <!-- Blobs decorativos -->
+    <div class="hero-blob w-96 h-96 bg-brand-purple top-20 -left-20"></div>
+    <div class="hero-blob w-96 h-96 bg-brand-pink top-40 right-0 animate-blob"></div>
+    <div class="hero-blob w-80 h-80 bg-brand-yellow bottom-0 left-1/3 animate-blob" style="animation-delay: 3s"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-fade-in-up">
+          <span class="inline-block px-4 py-1.5 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-semibold mb-6">
+            ✨ Diseño que transforma marcas
+          </span>
+          <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+            Creamos <span class="text-gradient">marcas</span> que <span class="text-gradient">inspiran</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 max-w-lg">
+            Somos un estudio de diseño gráfico especializado en crear identidades visuales memorables que conectan marcas con personas.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="screens/contacto.html" class="btn-primary">Iniciar Proyecto</a>
+            <a href="screens/galeria.html" class="btn-outline">Ver Portafolio</a>
+          </div>
+
+          <div class="flex items-center gap-8 mt-12">
+            <div>
+              <div class="text-3xl font-bold text-gradient" data-counter="500">0+</div>
+              <div class="text-sm text-gray-500">Proyectos</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-gradient" data-counter="350">0+</div>
+              <div class="text-sm text-gray-500">Clientes</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-gradient" data-counter="15">0</div>
+              <div class="text-sm text-gray-500">Años</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative hidden lg:block animate-fade-in" style="animation-delay: 0.3s">
+          <div class="relative animate-float">
+            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&h=600&fit=crop" 
+                 alt="Diseño creativo" 
+                 class="rounded-3xl shadow-2xl relative z-10">
+            <div class="absolute -top-6 -right-6 w-72 h-72 bg-gradient-brand rounded-3xl -z-0 opacity-20"></div>
+            <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-brand-yellow rounded-3xl -z-0 opacity-20"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS DESTACADOS ============ -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">Lo que hacemos</span>
+        <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-4">Nuestros Servicios</h2>
+        <div class="section-divider"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          Soluciones creativas integrales para cada etapa de tu marca
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+        <!-- Generado con JS -->
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a href="screens/servicios.html" class="btn-outline">Ver todos los servicios →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTAFOLIO PREVIEW ============ -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">Portafolio</span>
+        <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-4">Trabajos recientes</h2>
+        <div class="section-divider"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          Una pequeña muestra de los proyectos que hemos creado
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolioGrid">
+        <!-- Generado con JS -->
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a href="screens/galeria.html" class="btn-primary">Ver galería completa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">Testimonios</span>
+        <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-4">Lo que dicen nuestros clientes</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="testimonials-slider relative reveal">
+        <div class="testimonials-track flex transition-transform duration-500" id="testimonialsTrack">
+          <!-- Generado con JS -->
+        </div>
+
+        <div class="flex justify-center items-center gap-6 mt-12">
+          <button class="slider-prev w-12 h-12 rounded-full bg-white shadow-lg hover:bg-brand-purple hover:text-white transition flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="flex gap-2" id="sliderDots"></div>
+          <button class="slider-next w-12 h-12 rounded-full bg-white shadow-lg hover:bg-brand-purple hover:text-white transition flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="py-24 bg-gradient-brand text-white relative overflow-hidden">
+    <div class="hero-blob w-96 h-96 bg-white top-0 right-0 opacity-10"></div>
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10 reveal">
+      <h2 class="text-4xl lg:text-6xl font-bold mb-6">¿Listo para crear algo increíble?</h2>
+      <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+        Cuéntanos tu idea y haremos realidad el proyecto de tus sueños. Sin compromiso, solo creatividad.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="screens/contacto.html" class="bg-white text-brand-purple font-semibold px-10 py-4 rounded-full hover:shadow-2xl hover:scale-105 transition">
+          Empezar ahora
+        </a>
+        <a href="screens/precios.html" class="border-2 border-white text-white font-semibold px-10 py-4 rounded-full hover:bg-white hover:text-brand-purple transition">
+          Ver precios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-brand-dark text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-gradient-brand flex items-center justify-center text-white font-bold text-xl">S</div>
+            <span class="text-xl font-bold text-white">StudioCreativo</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Estudio de diseño gráfico especializado en crear marcas memorables.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="screens/nosotros.html" class="footer-link">Nosotros</a></li>
+            <li><a href="screens/servicios.html" class="footer-link">Servicios</a></li>
+            <li><a href="screens/galeria.html" class="footer-link">Galería</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="screens/servicios.html" class="footer-link">Branding</a></li>
+            <li><a href="screens/servicios.html" class="footer-link">Diseño Web</a></li>
+            <li><a href="screens/precios.html" class="footer-link">Precios</a></li>
+            <li><a href="screens/clases.html" class="footer-link">Clases</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="space-y-2 text-sm">
+            <li>📧 hola@studiocreativo.com</li>
+            <li>📞 +34 91 234 56 78</li>
+            <li>📍 Calle Creatividad 123, Madrid</li>
+          </ul>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-pink flex items-center justify-center transition">📷</a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-pink flex items-center justify-center transition">f</a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-pink flex items-center justify-center transition">in</a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-pink flex items-center justify-center transition">be</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <p>© <span id="currentYear"></span> Studio Creativo. Todos los derechos reservados.</p>
+        <div class="flex gap-6">
+          <a href="screens/politicas.html" class="hover:text-brand-pink transition">Políticas de Privacidad</a>
+          <a href="screens/terminos.html" class="hover:text-brand-pink transition">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" class="scroll-top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Renderizar servicios
+    document.getElementById('servicesGrid').innerHTML = STUDIO_DATA.SERVICES.slice(0, 6).map((s, i) => `
+      <div class="card-hover bg-white rounded-2xl p-8 shadow-lg reveal reveal-delay-${(i % 4) + 1}">
+        <div class="text-5xl mb-4">${getIcon(s.icon)}</div>
+        <h3 class="text-xl font-bold mb-3">${s.title}</h3>
+        <p class="text-gray-600 mb-4">${s.description}</p>
+        <a href="screens/servicios.html" class="text-brand-purple font-semibold hover:text-brand-pink transition">
+          Saber más →
+        </a>
+      </div>
+    `).join('');
+
+    // Renderizar portafolio
+    document.getElementById('portfolioGrid').innerHTML = STUDIO_DATA.PROJECTS.slice(0, 6).map((p, i) => `
+      <div class="gallery-item rounded-2xl overflow-hidden reveal reveal-delay-${(i % 4) + 1}" data-category="${p.category}">
+        <img src="${p.image}" alt="${p.title}" class="w-full h-64 object-cover">
+        <div class="gallery-overlay p-6 text-center">
+          <h4 class="text-2xl font-bold mb-2">${p.title}</h4>
+          <p class="text-sm opacity-90">${p.description}</p>
+        </div>
+      </div>
+    `).join('');
+
+    // Renderizar testimonios
+    const track = document.getElementById('testimonialsTrack');
+    track.innerHTML = STUDIO_DATA.TESTIMONIALS.map(t => `
+      <div class="testimonial-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-3">
+        <div class="flex items-center gap-1 mb-4">
+          ${'★'.repeat(t.rating)}
+        </div>
+        <p class="text-gray-700 mb-6 italic">"${t.text}"</p>
+        <div class="flex items-center gap-3">
+          <img src="${t.image}" alt="${t.name}" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <div class="font-bold">${t.name}</div>
+            <div class="text-sm text-gray-500">${t.company}</div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    // Inicializar scroll reveal después de renderizar
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }, 100);
+  </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Studio Creativo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-white">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../index.html" class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-lg bg-gradient-brand flex items-center justify-center text-white font-bold text-xl">S</div>
+          <span class="text-xl font-bold">Studio<span class="text-gradient">Creativo</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="../index.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Inicio</a>
+          <a href="nosotros.html" class="font-medium text-brand-purple">Nosotros</a>
+          <a href="servicios.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Servicios</a>
+          <a href="galeria.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Galería</a>
+          <a href="precios.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Precios</a>
+          <a href="clases.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Clases</a>
+          <a href="contacto.html" class="font-medium text-gray-700 hover:text-brand-purple transition">Contacto</a>
+        </div>
+        <a href="contacto.html" class="hidden lg:inline-block btn-primary">Cotizar Proyecto</a>
+        <button class="hamburger lg:hidden text-gray-800"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white z-40 shadow-2xl p-8 lg:hidden">
+    <div class="mt-20 flex flex-col gap-6">
+      <a href="../index.html" class="text-lg font-medium text-gray-700">Inicio</a>
+      <a href="nosotros.html" class="text-lg font-medium text-brand-purple">Nosotros</a>
+      <a href="servicios.html" class="text-lg font-medium text-gray-700">Servicios</a>
+      <a href="galeria.html" class="text-lg font-medium text-gray-700">Galería</a>
+      <a href="precios.html" class="text-lg font-medium text-gray-700">Precios</a>
+      <a href="clases.html" class="text-lg font-medium text-gray-700">Clases</a>
+      <a href="contacto.html" class="text-lg font-medium text-gray-700">Contacto</a>
+      <a href="contacto.html" class="btn-primary text-center mt-4">Cotizar</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="relative pt-40 pb-20 bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50 overflow-hidden">
+    <div class="hero-blob w-96 h-96 bg-brand-purple top-20 right-0 opacity-30"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+      <span class="inline-block px-4 py-1.5 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-semibold mb-6 reveal">
+        Conoce nuestra historia
+      </span>
+      <h1 class="text-5xl lg:text-7xl font-bold mb-6 reveal reveal-delay-1">
+        Sobre <span class="text-gradient">Nosotros</span>
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto reveal reveal-delay-2">
+        Somos un equipo apasionado por el diseño, comprometido con crear soluciones visuales que transforman marcas y conectan con personas.
+      </p>
+    </div>
+  </section>
+
+  <!-- HISTORIA / MISIÓN VISIÓN -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        <div class="reveal">
+          <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">Nuestra historia</span>
+          <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-6">15 años creando marcas memorables</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4">
+            Studio Creativo nació en 2009 con una visión clara: transformar la manera en que las marcas se conectan con su audiencia a través del diseño.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Desde entonces, hemos trabajado con cientos de empresas, desde startups hasta multinacionales, ayudándolas a comunicar su esencia a través de identidades visuales únicas y poderosos diseños.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Hoy somos un equipo multidisciplinario de diseñadores, ilustradores, desarrolladores y estrategas creativos, todos unidos por la pasión de crear trabajo excepcional.
+          </p>
+        </div>
+        <div class="relative reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop" 
+               alt="Equipo Studio Creativo" 
+               class="rounded-3xl shadow-2xl">
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-brand rounded-2xl -z-10"></div>
+        </div>
+      </div>
+
+      <!-- Misión Visión Valores -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl card-hover reveal">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Misión</h3>
+          <p class="text-gray-600">Crear diseños que transformen marcas y generen impacto real en los negocios de nuestros clientes.</p>
+        </div>
+        <div class="bg-gradient-to-br from-pink-50 to-yellow-50 p-8 rounded-2xl card-hover reveal reveal-delay-1">
+          <div class="text-4xl mb-4">👁️</div>
+          <h3 class="text-xl font-bold mb-3">Visión</h3>
+          <p class="text-gray-600">Ser el estudio de diseño referente en Latinoamérica, reconocido por nuestra creatividad y resultados.</p>
+        </div>
+        <div class="bg-gradient-to-br from-yellow-50 to-purple-50 p-8 rounded-2xl card-hover reveal reveal-delay-2">
+          <div class="text-4xl mb-4">💎</div>
+          <h3 class="text-xl font-bold mb-3">Valores</h3>
+          <p class="text-gray-600">Creatividad, pasión, colaboración y compromiso con resultados que superan expectativas.</p>
+        </div>
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl card-hover reveal reveal-delay-3">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="text-xl font-bold mb-3">Impacto</h3>
+          <p class="text-gray-600">Más de 500 proyectos exitosos en 15 países diferentes alrededor del mundo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">Nuestro recorrido</span>
+        <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-4">Nuestra Trayectoria</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-brand hidden md:block"></div>
+        <div class="space-y-12" id="timelineContainer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-brand-purple font-semibold uppercase tracking-wider text-sm">El equipo</span>
+        <h2 class="text-4xl lg:text-5xl font-bold mt-3 mb-4">Conoce a nuestro equipo</h2>
+        <div class="section-divider"></div>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          Un grupo de profesionales creativos apasionados por el diseño
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-24 bg-gradient-dark text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8" id="statsGrid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-gradient-brand text-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6">¿Trabajamos juntos?</h2>
+      <p class="text-xl opacity-90 mb-10">Estamos listos para hacer realidad tu próximo proyecto.</p>
+      <a href="contacto.html" class="inline-block bg-white text-brand-purple font-semibold px-10 py-4 rounded-full hover:shadow-2xl hover:scale-105 transition">
+        Contáctanos
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 rounded-lg bg-gradient-brand flex items-center justify-center text-white font-bold text-xl">S</div>
+            <span class="text-xl font-bold text-white">StudioCreativo</span>
+          </div>
+          <p class="text-gray-400 text-sm">Estudio de diseño gráfico especializado en crear marcas memorables.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Navegación</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../index.html" class="footer-link">Inicio</a></li>
+            <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+            <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+            <li><a href="galeria.html" class="footer-link">Galería</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicios.html" class="footer-link">Branding</a></li>
+            <li><a href="servicios.html" class="footer-link">Diseño Web</a></li>
+            <li><a href="precios.html" class="footer-link">Precios</a></li>
+            <li><a href="clases.html" class="footer-link">Clases</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="space-y-2 text-sm">
+            <li>📧 hola@studiocreativo.com</li>
+            <li>📞 +34 91 234 56 78</li>
+            <li>📍 Calle Creatividad 123, Madrid</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <p>© <span id="currentYear"></span> Studio Creativo. Todos los derechos reservados.</p>
+        <div class="flex gap-6">
+          <a href="politicas.html" class="hover:text-brand-pink transition">Políticas de Privacidad</a>
+          <a href="terminos.html" class="hover:text-brand-pink transition">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Timeline
+    document.getElementById('timelineContainer').innerHTML = STUDIO_DATA.TIMELINE.map((t, i) => `
+      <div class="flex flex-col md:flex-row gap-8 items-center reveal ${i % 2 === 0 ? '' : 'md:flex-row-reverse'}">
+        <div class="md:w-1/2 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'}">
+          <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+            <span class="text-brand-purple font-bold text-2xl">${t.year}</span>
+            <h3 class="text-xl font-bold mt-2 mb-2">${t.title}</h3>
+            <p class="text-gray-600">${t.description}</p>
+          </div>
+        </div>
+        <div class="hidden md:flex w-12 h-12 bg-gradient-brand rounded-full items-center justify-center text-white font-bold z-10 flex-shrink-0">
+          ${i + 1}
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+    `).join('');
+
+    // Team
+    document.getElementById('teamGrid').innerHTML = STUDIO_DATA.TEAM.map((m, i) => `
+      <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg reveal reveal-delay-${(i % 4) + 1}">
+        <div class="relative overflow-hidden">
+          <img src="${m.image}" alt="${m.name}" class="w-full h-72 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 hover:opacity-100 transition flex items-end p-6">
+            <div class="flex gap-3">
+              <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white hover:text-brand-purple transition">in</a>
+              <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white hover:text-brand-purple transition">ig</a>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-1">${m.name}</h3>
+          <p class="text-brand-purple font-semibold text-sm mb-3">${m.role}</p>
+          <p class="text-gray-600 text-sm">${m.bio}</p>
+        </div>
+      </div>
+    `).join('');
+
+    // Stats
+    document.getElementById('statsGrid').innerHTML = STUDIO_DATA.STATS.map((s, i) => `
+      <div class="text-center reveal reveal-delay-${i + 1}">
+        <div class="text-5xl lg:text-6xl font-bold text-gradient mb-2" data-counter="${s.value.replace(/[^0-9]/g, '')}">${s.value}</div>
+        <p class="text-gray-400">${s.label}</p>
+      </div>
+    `).join('');
+
+    // Re-init scroll reveal
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }, 100);
+  </script>
+</body>
+</html>
