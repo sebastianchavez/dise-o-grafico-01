@@ -6,10 +6,10 @@ const COMPANY = {
   name: "Studio Creativo",
   tagline: "Diseñamos el futuro de tu marca",
   description: "Somos un estudio de diseño gráfico especializado en crear identidades visuales memorables que conectan marcas con personas.",
-  email: "hola@studiocreativo.com",
-  phone: "+34 91 234 56 78",
-  whatsapp: "+34 612 345 678",
-  address: "Calle Creatividad 123, 28013 Madrid, España",
+  email: "hola@studiocreativo.cl",
+  phone: "+56 2 2345 6789",
+  whatsapp: "+56 9 1234 5678",
+  address: "Av. Creatividad 123, Santiago, Chile",
   schedule: {
     weekdays: "Lunes a Viernes: 9:00 - 19:00",
     saturday: "Sábados: 10:00 - 14:00",
@@ -197,8 +197,8 @@ const PROJECTS = [
 const PRICING_PLANS = [
   {
     name: "Básico",
-    price: 499,
-    period: "proyecto",
+    price: "499.000",
+    period: "CLP / proyecto",
     description: "Ideal para emprendedores que inician",
     features: [
       "Diseño de logo (3 propuestas)",
@@ -213,8 +213,8 @@ const PRICING_PLANS = [
   },
   {
     name: "Profesional",
-    price: 1299,
-    period: "proyecto",
+    price: "1.299.000",
+    period: "CLP / proyecto",
     description: "El más elegido por nuestros clientes",
     features: [
       "Todo lo del plan Básico",
@@ -230,8 +230,8 @@ const PRICING_PLANS = [
   },
   {
     name: "Empresarial",
-    price: 2999,
-    period: "proyecto",
+    price: "2.999.000",
+    period: "CLP / proyecto",
     description: "Para empresas que buscan destacar",
     features: [
       "Todo lo del plan Profesional",
@@ -256,7 +256,7 @@ const CLASSES = [
     description: "Aprende los principios básicos del diseño: tipografía, color, composición y jerarquía visual.",
     duration: "8 semanas",
     level: "Principiante",
-    price: 199,
+    price: "199.000",
     modality: "ambas",
     schedule: "Lunes y Miércoles - 18:00 a 20:00",
     professor: "Ana García",
@@ -268,7 +268,7 @@ const CLASSES = [
     description: "Domina Illustrator desde cero: vectorización, ilustración digital y diseño de logotipos.",
     duration: "6 semanas",
     level: "Intermedio",
-    price: 249,
+    price: "249.000",
     modality: "online",
     schedule: "Martes y Jueves - 19:00 a 21:00",
     professor: "Carlos Ruiz",
@@ -280,7 +280,7 @@ const CLASSES = [
     description: "Técnicas profesionales de Photoshop: retoque fotográfico, composición y diseño digital.",
     duration: "8 semanas",
     level: "Intermedio",
-    price: 249,
+    price: "249.000",
     modality: "ambas",
     schedule: "Lunes y Miércoles - 10:00 a 12:00",
     professor: "María López",
@@ -292,7 +292,7 @@ const CLASSES = [
     description: "Aprende a construir marcas memorables desde la estrategia hasta la ejecución visual.",
     duration: "10 semanas",
     level: "Avanzado",
-    price: 349,
+    price: "349.000",
     modality: "presencial",
     schedule: "Viernes - 16:00 a 19:00",
     professor: "Ana García",
@@ -304,7 +304,7 @@ const CLASSES = [
     description: "Diseña interfaces digitales increíbles. Figma, prototipado y diseño centrado en el usuario.",
     duration: "12 semanas",
     level: "Intermedio",
-    price: 449,
+    price: "449.000",
     modality: "online",
     schedule: "Martes y Jueves - 18:00 a 21:00",
     professor: "María López",
@@ -316,7 +316,7 @@ const CLASSES = [
     description: "Crea animaciones impactantes y videos profesionales con Adobe After Effects.",
     duration: "8 semanas",
     level: "Avanzado",
-    price: 299,
+    price: "299.000",
     modality: "online",
     schedule: "Sábados - 10:00 a 13:00",
     professor: "Diego Martín",
@@ -406,7 +406,7 @@ const FAQS = [
   },
   {
     question: "¿Qué métodos de pago aceptan?",
-    answer: "Aceptamos transferencia bancaria, tarjeta de crédito, PayPal y Bizum. Ofrecemos planes de pago para proyectos grandes."
+    answer: "Aceptamos transferencia bancaria, tarjeta de crédito (Visa, Mastercard, Amex), Webpay, Mercado Pago y PayPal. Ofrecemos planes de pago para proyectos grandes."
   },
   {
     question: "¿Puedo ver el proyecto durante el proceso?",
